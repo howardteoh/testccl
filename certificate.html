@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Chichilla Certificate</title>
+
+
+    <link href="library/fontawesome/css/all.min.css" rel="stylesheet" />
+    <link href="library/loading/loading1.css" rel="stylesheet" />
+
+    <!-- javascript library -->
+    <script src="library/jquery/3.3.1/jquery-3.3.1.min.js"></script>
+    <script src="library/jquery/2.2.4/jquery-2.2.4.min.js"></script>
+
+    <!-- bootstrap -->
+    <link href="library/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="library/bootstrap/js/bootstrap.min.js"></script>
+
+    <!--<link href="css/certificate.css" rel="stylesheet" />-->
+    <link href="css/certificate.css" rel="stylesheet" />
+</head>
+<body class="scrollbar">
+    <!-- loading -->
+    <div class="loading">
+        <div class="loading-text">
+            <span class="loading-text-words">L</span>
+            <span class="loading-text-words">O</span>
+            <span class="loading-text-words">A</span>
+            <span class="loading-text-words">D</span>
+            <span class="loading-text-words">I</span>
+            <span class="loading-text-words">N</span>
+            <span class="loading-text-words">G</span>
+        </div>
+    </div>
+    <!-- scroll to top -->
+    <a href="javascript:void(0)" id="back_to_top"><i class="fas fa-angle-up"></i> </a>
+    <div id="accordionExample" style="position:relative">
+        <nav id="sidebar" class="sidebar">
+            <div class="sidebar_content">
+                <div class="sidebar_header">
+                    <div class="user_pic">
+                        <img src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg" />
+                    </div>
+                    <div class="user_info">
+                        <span class="user_name color_gold">Alexander Khee</span>
+                        <span class="user_role">Administrator</span>
+                        <a href="index.html">Logout</a>
+                    </div>
+                </div>
+                <div class="sidebar_menu">
+                    <ul>
+                        <li class="header_menu">
+                            <span>General</span>
+                        </li>
+                        <li class="sidebar_dropdown">
+                            <a href="javascript:void(0);">
+                                <i class="fas fa-award"></i>
+                                <span>Certificate</span>
+                            </a>
+                            <div class="sidebar_submenu">
+                                <ul>
+                                    <li id="headingOne">
+                                        <a data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="cert " href="javascript:void(0);">DX 20190701</a>
+                                    </li>
+                                    <li id="headingTwo">
+                                        <a data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="cert " href="javascript:void(0);">DX 20190702</a>
+                                    </li>
+                                    <li id="headingThree">
+                                        <a data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="cert " href="javascript:void(0);">DX 20190703</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <footer>
+                    <div class="copyright">
+                        Copyright © 2019 petsstars.com All Rights Reserved
+                    </div>
+                </footer>
+                <!-- sidebar-menu  -->
+            </div>
+        </nav>
+        <!-- sidebar-wrapper  -->
+        <main class="container-fluid page_content mt-5 mb-5">
+            <div id="collapseOne" class="row m-0 form-group col-md-12 collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="col-12">
+                    <div class="module_title_label">DX20190701</div>
+                    <div class="module_title_main">Chinchilla <span class="color_gold">Certificate</span></div>
+                    <div class="dropdown-divider"></div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div>
+                        <img src="img/background/certificatecc.png" width="100%" />
+                    </div>
+                </div>
+            </div>
+            <div id="collapseTwo" class="row m-0 form-group col-md-12 collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="col-12">
+                    <div class="module_title_label">DX20190702</div>
+                    <div class="module_title_main">Chinchilla <span class="color_gold">Certificate</span></div>
+                    <div class="dropdown-divider"></div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div>
+                        <img src="img/background/certificatecc.png" width="100%" />
+                    </div>
+                </div>
+            </div>
+            <div id="collapseThree" class="row m-0 form-group col-md-12 collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="col-12">
+                    <div class="module_title_label">DX20190703</div>
+                    <div class="module_title_main">Chinchilla <span class="color_gold">Certificate</span></div>
+                    <div class="dropdown-divider"></div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div>
+                        <img src="img/background/certificatecc.png" width="100%" />
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- page-content" -->
+    </div>
+    <!-- page-wrapper -->
+    <script>
+        // loading screen function
+        $(window).on("load", function () {
+            $('.loading').fadeOut("slow");
+        });
+        // scroll to top
+        $('#back_to_top').click(function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+        // scrolling function
+        $(window).on('scroll', function () {
+            if ($(window).scrollTop()) {
+                if ($(this).scrollTop() > 50) {
+                    $('#back_to_top').fadeIn();
+                } else {
+                    $('#back_to_top').fadeOut();
+                }
+            }
+        });
+
+        $(document).ready(function () {
+            $(".sidebar_dropdown > a").click(function () {
+                $(".sidebar_submenu").slideUp(200);
+                if (
+                    $(this)
+                        .parent()
+                        .hasClass("active")
+                ) {
+                    $(".sidebar_dropdown").removeClass("active");
+                    $(this)
+                        .parent()
+                        .removeClass("active");
+                } else {
+                    $(".sidebar_dropdown").removeClass("active");
+                    $(this)
+                        .next(".sidebar_submenu")
+                        .slideDown(200);
+                    $(this)
+                        .parent()
+                        .addClass("active");
+                }
+            });
+        });
+    </script>
+</body>
+</html>

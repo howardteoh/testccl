@@ -1,0 +1,859 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+
+    <!-- facebook shaere content >>> http://ogp.me/ -->
+    <meta property="fb:app_id" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:description" content="">
+
+    <title>Chinchilla Malaysia</title>
+
+    <link href="library/fontawesome/css/all.min.css" rel="stylesheet" />
+    <link href="library/loading/loading1.css" rel="stylesheet" />
+
+    <!-- javascript library -->
+    <script src="library/jquery/3.3.1/jquery-3.3.1.min.js"></script>
+    <script src="library/jquery/2.2.4/jquery-2.2.4.min.js"></script>
+
+    <!-- bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.0.4/popper.js"></script>
+    <link href="library/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="library/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- animate on scroll  -->
+    <link href="library/aos/css/aos.css" rel="stylesheet" />
+    <script src="library/aos/js/aos.js"></script>
+
+    <!-- slider revolution -->
+    <link href="library/slider_revolution/css/settings.css" rel="stylesheet" />
+    <script src="library/slider_revolution/js/jquery.themepunch.plugins.min.js"></script>
+    <script src="library/slider_revolution/js/jquery.themepunch.revolution.min.js"></script>
+
+    <!-- flip clock -->
+    <link href="library/flipclock/css/flipclock.css" rel="stylesheet" />
+    <script src="library/flipclock/js/flipclock.min.js"></script>
+
+    <!-- owl carousel 2 beta 1.8-->
+    <link href="library/owlcarousel2beta1.8/css/owl.carousel.css" rel="stylesheet" />
+    <script src="library/owlcarousel2beta1.8/js/owl.carousel.js"></script>
+    <link href="library/owlcarousel2/css/owl.theme.default.css" rel="stylesheet" />
+
+    <link href="css/style.css" rel="stylesheet" />
+
+    <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
+</head>
+<body class="scrollbar">
+    <!-- loading -->
+    <div class="loading">
+        <div class="loading-text">
+            <span class="loading-text-words">L</span>
+            <span class="loading-text-words">O</span>
+            <span class="loading-text-words">A</span>
+            <span class="loading-text-words">D</span>
+            <span class="loading-text-words">I</span>
+            <span class="loading-text-words">N</span>
+            <span class="loading-text-words">G</span>
+        </div>
+    </div>
+    <!-- scroll to top -->
+    <a href="javascript:void(0)" id="back_to_top"><i class="fas fa-angle-up"></i> </a>
+    <!-- menu -->
+    <div>
+        <header>
+            <div class="head_box_1">
+                <div class="head_box_box_1">
+                    <div class="logo_layout" onclick="scrolltodiv('nav_home')">
+                        <span class="logo_chinchilla">Chinchilla</span>
+                        <span class="logo_chinchilla_slogan">Malaysia</span>
+                    </div>
+                </div>
+                <div class="profile_small head_box_box_3">
+                    <div>
+                        <a id="login_profile_menu" class="login_profile_menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="https://tympanus.net/Freebies/Landio/img/face5.jpg" />
+                        </a>
+                        <div class="dropdown-menu login_profile" aria-labelledby="dropdownMenuButton">
+                            <div class="login_profile_head">
+                                <div class="login_profile_head_box1">
+                                    <img src="https://tympanus.net/Freebies/Landio/img/face5.jpg" height="60" width="60"
+                                         alt="Avatar" class="img-circle">
+                                </div>
+                                <div class="login_profile_head_box2">
+                                    <span class="title">Joel Fisher</span>
+                                    <span class="email">hey@joelfisher.com</span>
+                                </div>
+                            </div>
+                            <div class="profile_list">
+                                <a href="certificate.html">Certificate</a>
+                                <a href="index.html" class="text-muted">Log out</a>
+                                <a href="#" class="btn-circle has-gradient pull-xs-right">
+                                    <span class="sr-only">Edit</span>
+                                    <span class="icon-edit"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-icon head_box_box_2">
+                    <div id="nav-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="head_box_2">
+                <nav style="width:100%; text-align:right;">
+                    <ul>
+                        <li><a onclick="scrolltodiv('nav_timelines')" href="javascript:void(0);">History</a></li>
+                        <li><a onclick="scrolltodiv('nav_event')" href="javascript:void(0);">Events</a></li>
+                        <li><a onclick="scrolltodiv('nav_about')" href="javascript:void(0);">About Us</a></li>
+                        <li><a onclick="scrolltodiv('nav_contact')" href="javascript:void(0);">Contact Us</a></li>
+                        <li><a href="login.html" class="btn btn-send login_btn" style="display: none;">Sign In</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="head_box_1 profile_large">
+                <div>
+                    <a id="login_profile_menu" class="login_profile_menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="https://tympanus.net/Freebies/Landio/img/face5.jpg" />
+                        <i class="far fa-angle-down"></i>
+                    </a>
+                    <div class="dropdown-menu login_profile" aria-labelledby="dropdownMenuButton">
+                        <div class="login_profile_head">
+                            <div class="login_profile_head_box1">
+                                <img src="https://tympanus.net/Freebies/Landio/img/face5.jpg" height="60" width="60"
+                                     alt="Avatar" class="img-circle">
+                            </div>
+                            <div class="login_profile_head_box2">
+                                <span class="title">Joel Fisher</span>
+                                <span class="email">hey@joelfisher.com</span>
+                            </div>
+                        </div>
+                        <div class="profile_list">
+                            <a href="certificate.html">Certificate</a>
+                            <a href="index.html" class="text-muted">Log out</a>
+                            <a href="#" class="btn-circle has-gradient pull-xs-right">
+                                <span class="sr-only">Edit</span>
+                                <span class="icon-edit"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <!-- slider -->
+    <div id="nav_home" class="tp-banner-container">
+        <div class="tp-banner">
+            <ul>
+                <!-- SLIDE  -->
+                <li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="1000"
+                    data-fstransition="fade" data-fsmasterspeed="1000" data-fsslotamount="7">
+                    <!-- MAIN IMAGE -->
+                    <img src="img/slider/banner2.jpg" alt="video_forest" data-bgposition="center center"
+                         data-bgfit="cover" data-bgrepeat="no-repeat">
+                    <!-- LAYERS -->
+                    <!-- LAYER NR. 1 -->
+                    <div class="tp-caption tp-fade fadeout fullscreenvideo" data-x="0" data-y="0" data-speed="1000"
+                         data-start="1100" data-easing="Power4.easeOut" data-endspeed="1500"
+                         data-endeasing="Power4.easeIn" data-autoplay="true" data-autoplayonlyfirsttime="false"
+                         data-nextslideatend="true" data-forceCover="1" data-dottedoverlay="twoxtwo"
+                         data-aspectratio="16:9" data-forcerewind="on" style="z-index: 2">
+
+                        <video class="video-js vjs-default-skin" preload="none" width="100%" height="100%" muted="muted"
+                               poster='img/slider/banner2.jpg'>
+                            <source src='video/small.mp4' type='video/mp4' />
+                            <source src='video/small.webm' type='video/webm' />
+                            <source src='video/small.ogv' type='video/ogg' />
+                        </video>
+                    </div>
+                </li>
+                <!-- SLIDE  -->
+                <li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="1000"
+                    data-fstransition="fade" data-fsmasterspeed="1000" data-fsslotamount="7">
+                    <!-- MAIN IMAGE -->
+                    <img src="img/slider/banner1.jpg" alt="video_forest" data-bgposition="center center"
+                         data-bgfit="cover" data-bgrepeat="no-repeat">
+                    <!-- LAYERS -->
+                    <!-- LAYER NR. 1 -->
+                    <div class="tp-caption tp-fade fadeout fullscreenvideo" data-x="0" data-y="0" data-speed="1000"
+                         data-start="1100" data-easing="Power4.easeOut" data-endspeed="1500"
+                         data-endeasing="Power4.easeIn" data-autoplay="true" data-autoplayonlyfirsttime="false"
+                         data-nextslideatend="true" data-forceCover="1" data-dottedoverlay="twoxtwo"
+                         data-aspectratio="16:9" data-forcerewind="on" style="z-index: 2">
+                    </div>
+                    <!-- LAYER NR. 2 -->
+                    <div class="tp-caption large_bold_white_25 customin customout tp-resizeme" data-x="center"
+                         data-hoffset="0" data-y="170"
+                         data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:5;scaleY:5;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="600" data-start="1400" data-easing="Power4.easeOut" data-endspeed="600"
+                         data-endeasing="Power0.easeIn" style="z-index: 3">
+                        The clearest way into the Universe<br />is through a forest wilderness.
+                    </div>
+                    <!-- LAYER NR. 3 -->
+                    <div class="tp-caption medium_text_shadow customin customout tp-resizeme" data-x="center"
+                         data-hoffset="0" data-y="bottom" data-voffset="-140"
+                         data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:5;scaleY:5;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="600" data-start="1700" data-easing="Power4.easeOut" data-endspeed="600"
+                         data-endeasing="Power0.easeIn" style="z-index: 4">
+                        John Muir
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--Event Countdown-->
+    <div id="nav_event_countdown" class="pt-5 pb-5 section bg_event_countdown">
+        <div class="container">
+            <div class="row" data-aos="fade-up" data-aos-duration="1500">
+                <div class="col-12 col-md-12 col-lg-12 col-xl-6">
+                    <div class="module_title_main pb-2"><span class="color_gold font_size_30">UPCOMING EVENTS</span></div>
+                    <div class="event_countdown_title">Chinchilla Gogo ~ 2019</div>
+                    <div class="event_countdown_description">XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX</div>
+                    <div class="event_countdown_description">XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX</div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-12 col-xl-6 event_countdown_clock_layout">
+                    <div class="clock"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- timelines -->
+    <div id="nav_timelines" class="bg_timelines pt-5 pb-5 section">
+        <div class="container timelines">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-12 col-xl-12 text-center mb-5" data-aos="flip-left" data-aos-duration="900">
+                    <div class="module_title pb-2">TIMELINES</div>
+                    <div class="module_title_main pb-2">Chinchilla <span class="color_gold">History</span></div>
+                    <div class="module_title_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus elit aliquam facilisis pharetra. Aenean consectetur lacinia diam a tincidunt. Vivamus facilisis lacus non velit suscipit pellentesque. Nam ac mauris nec mi lobortis sollicitudin sed at lacus.</div>
+                </div>
+                <div class="timeline_1">
+                    <div class="timeline_line">
+                        <div class="year_container">
+                            <div class="year_name">1524</div>
+                            <div class="month_container">
+                                <div class="content_layout">
+                                    <div class="description_layout">
+                                        The Spaniards discover the Chinchilla. <br />
+                                        Queen Isabella of Spain receives a Chinchilla coat. <br />
+                                        <img src="http://www.brooklynkittens.com/cat/catgif/breed/certificate.jpg" class="mt-3 mb-3 w-25" /><br />
+                                        <ul>
+                                            <li>
+                                                Chinchilla 2020
+                                                <ul>
+                                                    <li>Chinchilla 2017</li>
+                                                    <li>Chinchilla 2018</li>
+                                                    <li>Chinchilla 2019</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="date_layout">August, 1524</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="year_container">
+                            <div class="year_name">1591</div>
+                            <div class="month_container">
+                                <div class="content_layout">
+                                    <div class="description_layout">The first written record of Chinchillas appears: accredited to Josef de Acosta</div>
+                                    <div class="date_layout">August</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="year_container">
+                            <div class="year_name">1829</div>
+                            <div class="month_container">
+                                <div class="content_layout">
+                                    <div class="description_layout">The first "Lanigera" comes to London Zoo, the first held in captivity worldwide</div>
+                                    <div class="date_layout">January</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="year_container">
+                            <div class="year_name">1865</div>
+                            <div class="month_container">
+                                <div class="content_layout">
+                                    <div class="description_layout">"Lanigera" shown for the first time at Hamburg Zoo in Germany</div>
+                                    <div class="date_layout">February</div>
+                                </div>
+                                <div class="content_layout">
+                                    <div class="description_layout">"Lanigera" shown for the first time at Hamburg Zoo in Germany</div>
+                                    <div class="date_layout">March</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="year_container">
+                            <div class="year_name">1874</div>
+                            <div class="month_container">
+                                <div class="content_layout">
+                                    <div class="description_layout">With 500 Brevicaudatas Sir John Murray (Englishman), working in Chile tries to develop the breed.  This was the first known chinchilla breeding farm.</div>
+                                    <div class="date_layout">January</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="year_container">
+                            <div class="year_name">1882</div>
+                            <div class="month_container">
+                                <div class="content_layout">
+                                    <div class="description_layout">On 29 July 1882 Mathias Ferrel Chapman was born.</div>
+                                    <div class="date_layout">January</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Event-->
+    <div id="nav_event" class="section bg_event">
+        <div class="container-fluid event">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-6 col-xl-5 pl-0 pr-0 pl-lg-2 pt-lg-2 pb-lg-2 pr-lg-0 m-auto">
+                    <div class="owl-carousel owl-theme">
+                        <div><img src="https://dummyimage.com/1024x768/000/ffffff&text=+++++4:3+++++" /></div>
+                        <div><img src="https://dummyimage.com/1024x768/000/ffffff&text=+++++4:3+++++" /></div>
+                        <div><img src="https://dummyimage.com/1024x768/000/ffffff&text=+++++4:3+++++" /></div>
+                        <div><img src="https://dummyimage.com/1024x768/000/ffffff&text=+++++4:3+++++" /></div>
+                        <div><img src="https://dummyimage.com/1024x768/000/ffffff&text=+++++4:3+++++" /></div>
+                        <div><img src="https://dummyimage.com/1024x768/000/ffffff&text=+++++4:3+++++" /></div>
+                        <div><img src="https://dummyimage.com/1024x768/000/ffffff&text=+++++4:3+++++" /></div>
+                        <div><img src="https://dummyimage.com/1024x768/000/ffffff&text=+++++4:3+++++" /></div>
+                        <div><img src="https://dummyimage.com/1024x768/000/ffffff&text=+++++4:3+++++" /></div>
+                        <div><img src="https://dummyimage.com/1024x768/000/ffffff&text=+++++4:3+++++" /></div>
+                        <div><div class="item-video"><a class="owl-video" href="https://www.youtube.com/watch?v=BZi5AcBsmZM"></a></div></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6 col-xl-7 p-0 scrollbar event_container">
+                    <div class="event_outer_layout">
+                        <div class="p-5 event_inner_layout">
+                            <div class="module_title font_size_14">EVENT</div>
+                            <div class="module_title_main font_size_30">Chinchilla <span class="color_gold">GOGO 2019</span></div>
+                            <div class="module_title_label">
+                                <a href="https://goo.gl/maps/TSe3MJcs3a2Apvw46" target="_blank"><i class="fas fa-calendar-week text-secondary pr-2"></i> 05 January 2019, 16:50 PM</a>
+                                <a href="https://goo.gl/maps/TSe3MJcs3a2Apvw46" target="_blank"><i class="fas fa-map-marked-alt text-secondary pl-5 pr-2"></i> Templarasund 3, 101 Reykjavík, Iceland</a>
+                            </div>
+                            <div class="pt-2 pb-1">
+                                <p class="event_description">Lorem Ipsum is simply text the printing and typesetting standard industry. Lorem Ipsum is simply text the printing and typesetting standard industry. Lorem Ipsum is simply text the printing and typesetting standard industry.</p>
+                                <p class="event_description">Lorem Ipsum is simply text the printing and typesetting standard industry. Lorem Ipsum is simply text the printing and typesetting standard industry. Lorem Ipsum is simply text the printing and typesetting standard industry.</p>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-12 col-xl-12 text-right">
+                                <a class="btn btn-send" type="submit" href="event.html">Event Detail</a>
+                                <a class="btn btn-send" type="submit" href="eventlist.html">More Events</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Sponser-->
+    <div id="nav_sponser" class="section bg_sponser pt-5 pb-5">
+        <div class="container sponser">
+            <div class="row">
+                <ul class="sponser_list width_25">
+                    <li><img data-aos="flip-left" data-aos-duration="900" src="img/sponser/logo-1.png" alt="" title=""></li>
+                    <li><img data-aos="flip-left" data-aos-duration="900" src="img/sponser/logo-2.png" alt="" title=""></li>
+                    <li><img data-aos="flip-left" data-aos-duration="900" src="img/sponser/logo-3.png" alt="" title=""></li>
+                    <li><img data-aos="flip-left" data-aos-duration="900" src="img/sponser/logo-4.png" alt="" title=""></li>
+                    <li><img data-aos="flip-left" data-aos-duration="900" src="img/sponser/logo-5.png" alt="" title=""></li>
+                    <li><img data-aos="flip-left" data-aos-duration="900" src="img/sponser/logo-6.png" alt="" title=""></li>
+                    <li><img data-aos="flip-left" data-aos-duration="900" src="img/sponser/logo-7.png" alt="" title=""></li>
+                    <li><img data-aos="flip-left" data-aos-duration="900" src="img/sponser/logo-8.png" alt="" title=""></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--About Us-->
+    <div id="nav_about" class="section bg_about_us">
+        <div class="bg_img_about_us"></div>
+        <div class="scrollbar about_us_container">
+            <div class="container about_us" data-aos="fade-up" data-aos-duration="1500">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-12 col-xl-12 mb-5">
+                        <div class="module_title_main pb-3 pl-5 pt-5 text-left" style="font-size:32px;">Chinchilla <span class="color_gold">About Us</span></div>
+                        <div class="pl-5 pr-5">
+                            <p class="about_us_content">Lorem Ipsum is simply text the printing and typesetting standard industry. Lorem Ipsum is simply text the printing and typesetting standard industry. Lorem Ipsum is simply text the printing and typesetting standard industry. Lorem Ipsum is simply text the printing and typesetting standard industry. Lorem Ipsum is simply text the printing and typesetting standard industry. Lorem Ipsum is simply text the printing and typesetting standard industry.</p>
+                            <p class="about_us_content">Lorem Ipsum is simply text the printing and typesetting standard industry. Lorem Ipsum is simply text the printing and typesetting standard industry. Lorem Ipsum is simply text the printing and typesetting standard industry.</p>
+                            <p class="about_us_content">Lorem Ipsum is simply text the printing and typesetting standard industry. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Service-->
+    <div id="nav_service" class=" pt-5 pb-5 section">
+        <div class="container service">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-12 col-xl-12 text-center mb-5" data-aos="flip-left" data-aos-duration="900">
+                    <div class="module_title pb-2">SERVICES</div>
+                    <div class="module_title_main pb-2">Chinchilla <span class="color_gold">Service</span></div>
+                    <div class="module_title_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus elit aliquam facilisis pharetra. Aenean consectetur lacinia diam a tincidunt. Vivamus facilisis lacus non velit suscipit pellentesque. Nam ac mauris nec mi lobortis sollicitudin sed at lacus.</div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="service_box">
+                        <div class="service_content">
+                            <i class="fab fa-studiovinari service_icon"></i>
+                            <div class="service_title">Boxing CLass</div>
+                            <div class="service_description">Lorem Ipsum is simply text the printing and typesetting standard industry. Lorem Ipsum is simply text the printing and typesetting standard industry.</div>
+                        </div>
+                        <div class="service_overlay_img" style="background-image: url('../img/background/gym-banner-4.jpg');"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="service_box">
+                        <div class="service_content">
+                            <i class="fab fa-phoenix-framework service_icon"></i>
+                            <div class="service_title">Aerobics Class</div>
+                            <div class="service_description">Lorem Ipsum is simply text the printing and typesetting standard industry. Lorem Ipsum is simply text the printing and typesetting standard industry.</div>
+                        </div>
+                        <div class="service_overlay_img" style="background-image: url('../img/background/gym-banner-3.jpg');"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="service_box">
+                        <div class="service_content">
+                            <i class="fas fa-jedi service_icon"></i>
+                            <div class="service_title">Pilates Class</div>
+                            <div class="service_description">Lorem Ipsum is simply text the printing and typesetting standard industry. Lorem Ipsum is simply text the printing and typesetting standard industry.</div>
+                        </div>
+                        <div class="service_overlay_img" style="background-image: url('../img/background/gym-banner-5.jpg');"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="service_box">
+                        <div class="service_content">
+                            <i class="fab fa-studiovinari service_icon"></i>
+                            <div class="service_title">Boxing CLass</div>
+                            <div class="service_description">Lorem Ipsum is simply text the printing and typesetting standard industry. Lorem Ipsum is simply text the printing and typesetting standard industry.</div>
+                        </div>
+                        <div class="service_overlay_img" style="background-image: url('../img/background/gym-banner-4.jpg');"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="service_box">
+                        <div class="service_content">
+                            <i class="fab fa-phoenix-framework service_icon"></i>
+                            <div class="service_title">Aerobics Class</div>
+                            <div class="service_description">Lorem Ipsum is simply text the printing and typesetting standard industry. Lorem Ipsum is simply text the printing and typesetting standard industry.</div>
+                        </div>
+                        <div class="service_overlay_img" style="background-image: url('../img/background/gym-banner-3.jpg');"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="service_box">
+                        <div class="service_content">
+                            <i class="fas fa-jedi service_icon"></i>
+                            <div class="service_title">Pilates Class</div>
+                            <div class="service_description">Lorem Ipsum is simply text the printing and typesetting standard industry. Lorem Ipsum is simply text the printing and typesetting standard industry.</div>
+                        </div>
+                        <div class="service_overlay_img" style="background-image: url('../img/background/gym-banner-5.jpg');"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Team-->
+    <div id="nav_team" class="pt-5 pb-5 section bg_team text-center">
+        <div class="container owl-carousel owl-theme team_layout">
+            <div class="team_container">
+                <div class="team_user_icon_layout">
+                    <img class="team_user_icon mb-3" src="http://inventheme.com/themeforest/amigo/amigo/static/img/round2.jpg" />
+                    <div class="team_user_name">Koa Chaing Chaing</div>
+                    <div class="team_user_position">UX Camera</div>
+                </div>
+                <div class="team_content_layout">
+                    <div class="team_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+                    <div class="team_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+                    <div class="team_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+                </div>
+            </div>
+            <div class="team_container">
+                <div class="team_user_icon_layout">
+                    <img class="team_user_icon mb-3" src="http://inventheme.com/themeforest/amigo/amigo/static/img/round2.jpg" />
+                    <div class="team_user_name">Koa Chaing Chaing</div>
+                    <div class="team_user_position">UX Camera</div>
+                </div>
+                <div class="team_content_layout">
+                    <div class="team_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+                    <div class="team_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+                    <div class="team_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+                </div>
+            </div>
+            <div class="team_container">
+                <div class="team_user_icon_layout">
+                    <img class="team_user_icon mb-3" src="http://inventheme.com/themeforest/amigo/amigo/static/img/round2.jpg" />
+                    <div class="team_user_name">Koa Chaing Chaing</div>
+                    <div class="team_user_position">UX Camera</div>
+                </div>
+                <div class="team_content_layout">
+                    <div class="team_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+                    <div class="team_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+                    <div class="team_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+                </div>
+            </div>
+            <div class="team_container">
+                <div class="team_user_icon_layout">
+                    <img class="team_user_icon mb-3" src="http://inventheme.com/themeforest/amigo/amigo/static/img/round2.jpg" />
+                    <div class="team_user_name">Koa Chaing Chaing</div>
+                    <div class="team_user_position">UX Camera</div>
+                </div>
+                <div class="team_content_layout">
+                    <div class="team_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+                    <div class="team_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+                    <div class="team_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+                </div>
+            </div>
+            <div class="team_container">
+                <div class="team_user_icon_layout">
+                    <img class="team_user_icon mb-3" src="http://inventheme.com/themeforest/amigo/amigo/static/img/round2.jpg" />
+                    <div class="team_user_name">Koa Chaing Chaing</div>
+                    <div class="team_user_position">UX Camera</div>
+                </div>
+                <div class="team_content_layout">
+                    <div class="team_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+                    <div class="team_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+                    <div class="team_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+                </div>
+            </div>
+            <div class="team_container">
+                <div class="team_user_icon_layout">
+                    <img class="team_user_icon mb-3" src="http://inventheme.com/themeforest/amigo/amigo/static/img/round2.jpg" />
+                    <div class="team_user_name">Koa Chaing Chaing</div>
+                    <div class="team_user_position">UX Camera</div>
+                </div>
+                <div class="team_content_layout">
+                    <div class="team_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+                    <div class="team_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+                    <div class="team_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+                </div>
+            </div>
+            <div class="team_container">
+                <div class="team_user_icon_layout">
+                    <img class="team_user_icon mb-3" src="http://inventheme.com/themeforest/amigo/amigo/static/img/round2.jpg" />
+                    <div class="team_user_name">Koa Chaing Chaing</div>
+                    <div class="team_user_position">UX Camera</div>
+                </div>
+                <div class="team_content_layout">
+                    <div class="team_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+                    <div class="team_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+                    <div class="team_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+                </div>
+            </div>
+            <div class="team_container">
+                <div class="team_user_icon_layout">
+                    <img class="team_user_icon mb-3" src="http://inventheme.com/themeforest/amigo/amigo/static/img/round2.jpg" />
+                    <div class="team_user_name">Koa Chaing Chaing</div>
+                    <div class="team_user_position">UX Camera</div>
+                </div>
+                <div class="team_content_layout">
+                    <div class="team_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+                    <div class="team_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+                    <div class="team_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+                </div>
+            </div>
+            <div class="team_container">
+                <div class="team_user_icon_layout">
+                    <img class="team_user_icon mb-3" src="http://inventheme.com/themeforest/amigo/amigo/static/img/round2.jpg" />
+                    <div class="team_user_name">Koa Chaing Chaing</div>
+                    <div class="team_user_position">UX Camera</div>
+                </div>
+                <div class="team_content_layout">
+                    <div class="team_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+                    <div class="team_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+                    <div class="team_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+                </div>
+            </div>
+            <div class="team_container">
+                <div class="team_user_icon_layout">
+                    <img class="team_user_icon mb-3" src="http://inventheme.com/themeforest/amigo/amigo/static/img/round2.jpg" />
+                    <div class="team_user_name">Koa Chaing Chaing</div>
+                    <div class="team_user_position">UX Camera</div>
+                </div>
+                <div class="team_content_layout">
+                    <div class="team_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+                    <div class="team_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+                    <div class="team_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Contact Us-->
+    <div id="nav_contact" class="bg_contact_us pt-5 pb-5 section">
+        <div class="container contact_us">
+            <div class="row justify-content-md-center">
+                <div class="col-12 col-md-12 col-lg-12 col-xl-12 text-center mb-5" data-aos="flip-left" data-aos-duration="900">
+                    <div class="module_title pb-2">CONTACT US</div>
+                    <div class="module_title_main pb-2">Chinchilla <span class="color_gold">Contact Us</span></div>
+                    <div class="module_title_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus elit aliquam facilisis pharetra. Aenean consectetur lacinia diam a tincidunt. Vivamus facilisis lacus non velit suscipit pellentesque. Nam ac mauris nec mi lobortis sollicitudin sed at lacus.</div>
+                </div>
+                <div class="col-12 col-md-8 col-lg-5 col-xl-5" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="card_scene mb-5">
+                        <div class="card_layout">
+                            <div class="card_common card_front">
+                                <div>
+                                    <div class="contact_title">Drop Us a Line</div>
+                                    <div class="contact_description">
+                                        <p>TUNE makes the industry’s most flexible SaaS platform for managing marketing partnerships across mobile and web.</p>
+                                    </div>
+                                    <div class="contact_description">
+                                        <p>TUNE makes the industry’s most flexible SaaS platform for managing marketing partnerships across mobile and web.</p>
+                                    </div>
+                                    <div class="contact_description">
+                                        <p>TUNE makes the industry’s most flexible SaaS platform for managing marketing partnerships across mobile and web.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card_common card_back is_flipped">
+                                <div class="card_contact_info_layout">
+                                    <div class="card_contact_info">
+                                        <i class="pr-4 fas fa-map-marker-alt text-danger"></i>
+                                        <div>301 The Greenhouse, London, E2 8DY.</div>
+                                    </div>
+                                    <div class="card_contact_info">
+                                        <i class="pr-4 fas fa-envelope"></i>
+                                        <div>petsStar@gmail.com</div>
+                                    </div>
+                                    <div class="card_contact_info">
+                                        <i class="pl-4 fas fa-phone fa-flip-horizontal text-success"></i>
+                                        <div>+6(016) 10258912</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-7 col-xl-7" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="row pb-3">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                            <div class="form-group">
+                                <input class="gate" id="txt_name" type="text" />
+                                <label for="txt_name">Name</label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                            <div class="form-group">
+                                <input class="gate" id="txt_email" type="text" />
+                                <label for="txt_email">Email</label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-12 col-xl-12">
+                            <textarea id="txt_description" placeholder="Description" rows="12"></textarea>
+                            <button class="btn btn-send float-right" type="submit"><i class="fas fa-paper-plane pr-1"></i> Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7968.750746583439!2d101.468167!3d2.9931433!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdac5760ff5811%3A0x9c7c6229927271c9!2sPETS+STAR!5e0!3m2!1sen!2smy!4v1550405466068"
+            width="100%" height="350" frameborder="0" style="border:0; margin-bottom: -7px;" allowfullscreen></iframe>
+    <!-- footer -->
+    <footer>
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-3 col-xl-3 pb-5">
+                    <div class="logo_layout">
+                        <span class="logo_chinchilla">Chinchilla</span>
+                        <span class="logo_chinchilla_slogan">Malaysia</span>
+                    </div>
+                    <p class="footer_company_description mb-30">
+                        Fosse Commercial Contractors, LLC began in 1985 when Mr. Robert Fosse began his own company,
+                        Fosse Painting and General Construction in the Houston area. In 1993 the original company
+                        was
+                        merged with another small-scale local company, West General Contractors, and the company
+                        began
+                        to bid successfully for larger scale projects.
+                    </p>
+                    <div class="footer_contact_info">
+                        <i class="fas fa-envelope"></i>
+                        <div>petsstar@gmail.com</div>
+                    </div>
+                    <div class="
+                            footer_contact_info">
+                        <i class="fa fa-phone text-success fa-flip-horizontal"></i>
+                        <div>Office : +6(016) 10258912</div>
+                    </div>
+                    <div class="footer_contact_info">
+                        <i class="fa fa-map-marker"></i>
+                        <div>62A Loring Pending 2e Bandar Puteri Klang 41200 Klang Selangor</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-3 col-xl-3 pb-5">
+                    <span class="title">NAVIGATIONS</span>
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                            <div class="footer_link">
+                                <a href="#">
+                                    <i class="fa fa-angle-double-right"></i>
+                                    <span>Home</span>
+                                </a>
+                            </div>
+                            <div class="footer_link">
+                                <a href="#">
+                                    <i class="fa fa-angle-double-right"></i>
+                                    <span>History</span>
+                                </a>
+                            </div>
+                            <div class="footer_link">
+                                <a href="#">
+                                    <i class="fa fa-angle-double-right"></i>
+                                    <span>Events</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                            <div class="footer_link">
+                                <a href="#">
+                                    <i class="fa fa-angle-double-right"></i>
+                                    <span>About Us</span>
+                                </a>
+                            </div>
+                            <div class="footer_link">
+                                <a href="#">
+                                    <i class="fa fa-angle-double-right"></i>
+                                    <span>Contact Us</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-3 col-xl-3 pb-5">
+                    <span class="title">USEFUL LINKS</span>
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                            <div class="footer_link">
+                                <a href="#">
+                                    <i class="fa fa-angle-double-right"></i>
+                                    <span>Pets Stars</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                            <div class="footer_link">
+                                <a href="#">
+                                    <i class="fa fa-angle-double-right"></i>
+                                    <span>Certificate</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-3 col-xl-3 pb-5">
+                    <span class="title">SOCIAL LINKS</span>
+                    <ul class="footer_title_line">
+                        <li><a href="#" class="facebook"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#" class="twitter"><i class="fab fa-twitter-square"></i></a></li>
+                        <li><a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="#" class="youtube"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                    <label class="footer_subscribe_info">
+                        Subscribe to our email newsletter for useful tips and
+                        valuable
+                        resources.
+                    </label>
+                    <div class="input-group">
+                        <input type="text" name="Name" class="form-control" title="Email Address"
+                               placeholder="Email Address">
+                        <div class="input-group-append">
+                            <button class="btn btn-success" type="button"><i class="fa fa-check"></i></button>
+                        </div>
+                    </div>
+                    <label class="footer_subscribe_info">We respect your privacy</label>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            Copyright © 2019 petsstars.com All Rights Reserved
+        </div>
+    </footer>
+    <script>
+        function scrolltodiv(id) {
+            $('html,body').animate({
+                scrollTop: $('#' + id).offset().top
+            }, 'slow');
+        }
+
+        function getUrlVars() {
+            var vars = [], hash;
+            var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+            for (var i = 0; i < hashes.length; i++) {
+                hash = hashes[i].split('=');
+                vars.push(hash[0]);
+                vars[hash[0]] = hash[1];
+            }
+            return vars;
+        }
+
+        $(document).ready(function () {
+            if (getUrlVars()['s'] == 'loginx') {
+                $('.login_btn').hide();
+                $('.profile_large').addClass("show");
+                $('.profile_small').addClass("show");
+            } else {
+                $('.login_btn').show();
+                $('.profile_large').removeClass("show");
+                $('.profile_small').removeClass("show");
+            }
+            // menu icon on click change
+            $('#nav-icon').click(function () {
+                $(this).toggleClass('open');
+                $(".head_box_2").toggleClass('menu_in');
+            });
+            // animate on scroll
+            AOS.init();
+
+            $(".owl-carousel").owlCarousel({
+                autoplayHoverPause: true,
+                autoplay: true,
+                autoplayTimeout: 1500,
+                items: 1,
+                loop: true,
+                lazyLoad: true,
+                video: true
+            });
+        });
+        $(document).on('mousemove', function (e) {
+            $('.light').css({
+                left: e.pageX - 300,
+                top: e.pageY - 300
+            });
+        });
+
+        var el = $('.main_image_container');
+
+        el.on('mousemove', function (e) {
+            const { left, top } = $(this).offset();
+            const cursPosX = e.pageX - left;
+            const cursPosY = e.pageY - top;
+            const cursFromCenterX = $(this).width() / 2 - cursPosX;
+            const cursFromCenterY = $(this).height() / 2 - cursPosY;
+
+
+            $(this).css('transform', 'perspective(500px) rotateX(' + (cursFromCenterY / 40) + 'deg) rotateY(' + -(cursFromCenterX / 40) + 'deg) translateZ(10px)');
+
+            const invertedX = Math.sign(cursFromCenterX) > 0 ? -Math.abs(cursFromCenterX) : Math.abs(cursFromCenterX);
+
+            $(this).removeClass('leave');
+        });
+
+        el.on('mouseleave', function () {
+            $(this).addClass('leave');
+        });
+    </script>
+</body>
+</html>
